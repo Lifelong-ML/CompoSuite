@@ -1,0 +1,17 @@
+<mujoco model="can-visual">
+  <asset>
+    <texture file="../textures/white-bricks.png" type="cube" name="brick" />
+    <material name="BrickWall" texture="brick" specular="1" shininess="0.3" rgba="1 0.3 0.3 1" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0">
+        <geom material="BrickWall" type="box" contype="1" size="0.1 0.005 0.125" name="wall" conaffinity="1" pos="0 0 0.02" mass="1000" group="0"/>
+      </body>
+
+      <site rgba="0 1 0 1" size="0.005" pos="0 0 -0.125" name="bottom_site"/>
+      <site rgba="0 1 0 1" size="0.005" pos="0 0 0.125" name="top_site"/>
+      <site rgba="0 1 0 1" size="0.005" pos="0.1 0.005 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

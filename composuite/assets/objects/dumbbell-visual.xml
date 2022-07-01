@@ -1,0 +1,16 @@
+<mujoco model="dumbbell-visual">
+  <worldbody>
+    <body>
+
+      <body name="object">
+        <geom pos="0 0 0" size="0.02 0.045" type="cylinder" conaffinity="0" contype="0" group="1" mass="0.0001" rgba="0.8 0.8 0.8 0.3"/>
+        <geom pos="0 0 0.045" size="0.05 0.0035" type="cylinder" conaffinity="0" contype="0" group="1" mass="0.0001" rgba="0.8 0.8 0.8 0.3"/>
+        <geom pos="0 0 -0.045" size="0.05 0.0035" type="cylinder" conaffinity="0" contype="0" group="1" mass="0.0001" rgba="0.8 0.8 0.8 0.3"/>
+      </body>
+
+      <site rgba="0 0 0 0" size="0.001" pos="0.0 0.0 -0.052" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.001" pos="0.0 0.0 0.052" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.001" pos="0.05 0 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

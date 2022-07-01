@@ -1,0 +1,3 @@
+git+https://github.com/ARISE-Initiative/robosuite@7a92b7071eb4922f26fe75b6049c05ca967cb175#egg=robosuite
+mujoco-py==2.0.2.13
+-e .
