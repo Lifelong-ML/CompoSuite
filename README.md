@@ -1,7 +1,7 @@
 # CompoSuite
 
 This repository contains the official release of 
-[CompoSuite: A Compositional Reinforcement Learning Benchmark](https://openreview.net/pdf?id=rnfI3pu4L-5). We include pre-trained models from our CoLLAs-22 paper in our accompanying data repository, [CompoSuite-Data](https://github.com/Lifelong-ML/CompoSuite-Data), and the multi-task and compositional PPO implementations in our adaptation of Spinning Up, [CompoSuite-spinningup](https://github.com/Lifelong-ML/CompoSuite-spinningup).
+[CompoSuite: A Compositional Reinforcement Learning Benchmark](https://arxiv.org/pdf/2207.04136.pdf). We include pre-trained models from our CoLLAs-22 paper in our accompanying data repository, [CompoSuite-Data](https://github.com/Lifelong-ML/CompoSuite-Data), and the multi-task and compositional PPO implementations in our adaptation of Spinning Up, [CompoSuite-spinningup](https://github.com/Lifelong-ML/CompoSuite-spinningup).
 
 CompoSuite is a benchmark of 256 compositional robotic manipulation tasks, each requiring fundamentally distinct behaviors. The diversity of tasks and their underlying compositional structure enables studying the ability of multi-task RL algorithms to extract the compositional properties of the environments, or simply explporing their ability to handle diverse tasks and generalize.
 
