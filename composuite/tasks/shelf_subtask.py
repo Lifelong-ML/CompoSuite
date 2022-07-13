@@ -32,7 +32,7 @@ class ShelfSubtask(CompositionalEnv):
         render_gpu_device_id=-1,
         control_freq=20,
         horizon=1000,
-        ignore_done=False,
+        ignore_done=True,
         hard_reset=True,
         camera_names="agentview",
         camera_heights=256,

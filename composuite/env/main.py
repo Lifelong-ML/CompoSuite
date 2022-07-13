@@ -19,7 +19,7 @@ AVAILABLE_TASKS = ["PickPlace", "Push", "Shelf", "Trashcan"]
 def make(robot="IIWA", obj="milk", obstacle=None, 
          task="PickPlace", controller="osc", env_horizon=500, 
          has_renderer=False, has_offscreen_renderer=False, 
-         reward_shaping=True, ignore_done=False, use_camera_obs=False, 
+         reward_shaping=True, ignore_done=True, use_camera_obs=False, 
          **kwargs) -> GymWrapper:
     """Create a compositional environment in form of a gym environment.
 
@@ -47,7 +47,7 @@ def make(robot="IIWA", obj="milk", obstacle=None,
         reward_shaping (bool, optional): True, if shaped rewards instead of sparse
                                          rewards should be used. Defaults to True.
         ignore_done (bool, optional): True, if environment should not output done
-                                      after reaching horizon. Defaults to False.
+                                      after reaching horizon. Defaults to True.
         use_camera_obs (bool, optional): True, if environment should return visual
                                          observations. Defaults to False.
 
