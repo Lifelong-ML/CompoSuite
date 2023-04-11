@@ -188,7 +188,7 @@ def main():
                              experiment type does not exist.
     """
     args = parse_default_args()
-    np.random.seed()
+    np.random.seed(args.seed)
     if args.experiment_type == 'default':
         if args.learner_type == 'stl':
             if args.task_id != -1:
