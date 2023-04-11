@@ -90,7 +90,7 @@ class CompositionalEnv(SingleArmEnv):
 
         # task settings
         self.object_type = object_type
-        self.obstacle_type = obstacle
+        self.obstacle_type = None if obstacle == "None" else obstacle
         self.robot_name = robots
         self.obj_class_map = OrderedDict({
             "Box": (CustomBoxObject, CustomBoxVisualObject),
