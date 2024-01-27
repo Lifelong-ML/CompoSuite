@@ -20,7 +20,7 @@ If you use any part of CompoSuite for academic research, please cite our work us
 
 We provide two sets of dependencies for installing CompoSuite: `requirements_default.txt` (for installing the latest compatible version of each dependency) and `requirements_paper.txt` (for reproducing the results from our CoLLAs-22 paper). To install, execute the following command sequence:
 
-CompoSuite requires Python<=3.9. However, the example training scripts require Python version 3.6 or 3.7, for compatibility with Spinning Up.
+CompoSuite requires Python<=3.11 (It might work with 3.12 but is not tested.). However, the example training scripts require Python version 3.6 or 3.7, for compatibility with Spinning Up.
 
 ```
 git clone https://github.com/Lifelong-ML/CompoSuite.git

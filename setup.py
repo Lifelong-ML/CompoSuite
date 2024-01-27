@@ -20,7 +20,7 @@ setup(
     ],
     eager_resources=["*"],
     include_package_data=True,
-    python_requires=">=3,<3.10",
+    python_requires=">=3,<3.12",
     description="CompoSuite: A Compositional Reinforcement Learning Benchmark",
     author="Jorge Mendez, Marcel Hussing, Meghna Gummadi and Eric Eaton",
     url="https://github.com/Lifelong-ML/CompoSuite",

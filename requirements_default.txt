@@ -1,2 +1,2 @@
-robosuite==1.3.2
--e .
+robosuite==1.4.0
+termcolor==2.4.0

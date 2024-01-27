@@ -4,10 +4,8 @@ import itertools
 import random
 
 from robosuite.controllers import load_controller_config
-from robosuite.utils.input_utils import *
-
 from composuite.env.gym_wrapper import GymWrapper
-
+import robosuite as suite
 
 AVAILABLE_ROBOTS = ["IIWA", "Jaco", "Kinova3", "Panda"]
 AVAILABLE_OBSTACLES = [None, "None", "GoalWall",
@@ -16,8 +14,8 @@ AVAILABLE_OBJECTS = ["Box", "Dumbbell", "Plate", "Hollowbox"]
 AVAILABLE_TASKS = ["PickPlace", "Push", "Shelf", "Trashcan"]
 
 
-def make(robot="IIWA", obj="milk", obstacle=None, 
-         task="PickPlace", controller="osc", env_horizon=500, 
+def make(robot="IIWA", obj="Box", obstacle=None, 
+         task="PickPlace", controller="joint", env_horizon=500, 
          has_renderer=False, has_offscreen_renderer=False, 
          reward_shaping=True, ignore_done=True, use_camera_obs=False, 
          **kwargs) -> GymWrapper:
